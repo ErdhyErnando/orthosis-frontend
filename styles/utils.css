@@ -1,7 +1,7 @@
 .btn {
     background-color: #33FF6C;
+    color: #ffffff;
     border: none;
-    color: white;
     padding: 10px 30px;
     text-align: center;
     text-decoration: none;
@@ -12,6 +12,6 @@
 }
 
 .btn:hover {
-    background-color: #54c656;
-
+    background-color: #31df62;
+    color: #000;
 }

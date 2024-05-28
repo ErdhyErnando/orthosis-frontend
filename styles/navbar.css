@@ -27,13 +27,13 @@
     margin-right: 10px;
 }
 
-.nav__container ul li a {
+.nav__container ul li:nth-child(-n+2) a {
     text-decoration: none;
     color: rgb(133, 133, 133);
     font-size: 14px;
 }
 
-.nav__container ul li a:hover {
+.nav__container ul li:not(:last-child) a:hover {
     color: rgb(214, 214, 214);
 }
 
