@@ -1,0 +1,39 @@
+.header {
+    /* border: 1px solid rebeccapurple; */
+    display: flex;
+    background-color: #181818 ;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 10px;
+}
+
+.nav__container img {
+    width: 35px;
+    height: auto;
+}
+
+.nav__container ul {
+    display: flex;
+    list-style: none;
+    margin-left: 8px;                                           
+}
+
+.nav__container ul li {
+    margin-right: 10px;
+}
+
+.nav__container ul li a {
+    text-decoration: none;
+    color: rgb(133, 133, 133);
+    font-size: 14px;
+}
+
+.nav__container ul li a:hover {
+    color: rgb(214, 214, 214);
+}
+
