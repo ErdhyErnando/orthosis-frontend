@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,
+    wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/gui.css">
+    <link rel="stylesheet" href="/styles/utils.css">
+    <title>GUI Mode</title>
+</head>
+
+<body>
+    <!--Navigation-->
+    <header class="header">
+        <nav class="nav__container">
+            <a href="/index.html"><img src="/public/mechanical-arm.png" alt="logo" class="nav__logo"></a>
+            <ul>
+                <li><a href="#">CLI Mode</a></li>
+                <li><a href="gui.html">GUI Mode</a></li>
+                <li><a href="#" class="btn"> Login </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Graph and Output-->
+    <section class="gui__graphoutput">
+
+        <!-- TODO: add real chart.js-->
+        <div class="gui__graph">
+            <img src="/public/graph.png" alt="graph" class="graph__image">
+        </div>
+
+        <!-- TODO: CHANGE TO DYNAMIC LATER-->
+        <div class="gui__output">
+            <p>test result 1: 9877.09</p>
+            <p>test result 2: 9873.09</p>
+            <p>test result 2: 8769.09</p>
+            <p>...</p>
+        </div>
+    </section>
+
+    <!-- Choose File and Parameter -->
+    <section class="gui__fileandparam">
+        <div class="gui__file">
+            <input type="file" id="file" name="file" class="gui__fileinput">
+        </div>
+
+        <div class="gui__param">
+            <input type="text" id="param1" name="param1" placeholder="Param 1">
+            <input type="text" id="param2" name="param2" placeholder="Param 2">
+            <input type="text" id="param3" name="param3" placeholder="Param 3">
+            <input type="text" id="param4" name="param4" placeholder="Param 4">
+            <input type="text" id="param5" name="param5" placeholder="Param 5">
+        </div>
+
+        <button class="gui__runbutton">Run</button>
+    </section>
+
+
+</body>
+
+</html>

@@ -19,6 +19,12 @@
     gap: 22.5px;
 }
 
+.hero__container a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
 .hero__clicontainer, 
 .hero__guicontainer {
     display: flex;
@@ -31,9 +37,11 @@
     padding: 10px 10px auto;
 }
 
+
 .hero__clicontainer:hover, 
 .hero__guicontainer:hover {
-    background-color: #e7e7e7;
+    border: 0.1px solid #a2a2a2;
+    background-color: #f1f1f1;
     cursor: pointer;
 }
 

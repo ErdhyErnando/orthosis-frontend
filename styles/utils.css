@@ -1,7 +1,7 @@
 .btn {
     background-color: #33FF6C;
     color: #ffffff;
-    border: none;
+    border: 1.5px solid #ffffff;
     padding: 10px 30px;
     text-align: center;
     text-decoration: none;
@@ -14,4 +14,5 @@
 .btn:hover {
     background-color: #31df62;
     color: #000;
+    border: 1.5px solid #000;
 }
