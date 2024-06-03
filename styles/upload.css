@@ -19,6 +19,12 @@
 
 }
 
+.upload__container a{
+    text-decoration: none;
+    color: white;
+}
+
 .upload__container:hover {
     background-color: #333;
+    color:#4F4F4F;
 }

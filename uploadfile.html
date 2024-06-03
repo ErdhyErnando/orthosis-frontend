@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,
+    wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/uploadfile.css">
+    <link rel="stylesheet" href="/styles/utils.css">
+    <title>GUI Mode</title>
+</head>
+
+<body>
+    <!--Navigation-->
+    <header class="header">
+        <nav class="nav__container">
+            <a href="/index.html"><img src="/public/mechanical-arm.png" alt="logo" class="nav__logo"></a>
+            <ul>
+                <li><a href="#">CLI Mode</a></li>
+                <li><a href="gui.html">GUI Mode</a></li>
+                <li><a href="#" class="btn"> Login </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Uplaod File Section-->
+    <main class="uploadfile__container">
+        <div class="uploadfile__header">
+            <h2>Add New File</h2>
+        </div>
+
+        <div class="uploadfile__title">
+            <label for="text">Title</label>
+            <input type="text" id="title" name="title">
+        </div>
+
+        <div class="uploadfile__upload">
+            <label for="text">Attach File</label>
+            <form action="">
+                <div class="uploadfile__uploadtext">
+                    <input type="file" id="hiddenFileInput" name="file" class="uploadfile__fileinput">
+                    <p>click here to select a file</p>
+                </div>
+            </form>
+        </div>
+
+        <div class="uploadfile__btncontainer">
+            <button class="uploadfile__button">Upload</button>
+        </div>
+
+    </main>
+</body>
+
+<script>
+    document.querySelector('.uploadfile__uploadtext').addEventListener('click', function () {
+        document.getElementById('hiddenFileInput').click();
+    });
+</script>
+
+</html>

@@ -48,7 +48,10 @@
     <!-- Choose File and Parameter -->
     <section class="gui__fileandparam">
         <div class="gui__file">
-            <input type="file" id="file" name="file" class="gui__fileinput">
+            <form action="">
+                <input type="file" accept=".py" id="UploadFile">
+                <label for="UploadFile" id="hiddenFileInput" class="gui__filelabel">Choose Files</label>
+            </form>
         </div>
 
         <div class="gui__param">
@@ -61,8 +64,12 @@
 
         <button class="gui__runbutton">Run</button>
     </section>
-
-
 </body>
+
+<script>
+    document.querySelector('.gui__file').addEventListener('click', function () {
+        document.getElementById('hiddenFileInput').click();
+    });
+</script>
 
 </html>
